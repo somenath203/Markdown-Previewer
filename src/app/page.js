@@ -20,7 +20,7 @@ const Page = () => {
         ></textarea>
         <div className="w-11/12 lg:w-2/6 h-96 border-2 border-slate-100 rounded-lg p-2 overflow-auto bg-transparent">
           {!text ? (
-            'the markdown of your text will be visible here'
+            'your markdown preview will be visible here'
           ) : (
             <Markdown className="markdown" remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>{text}</Markdown>
           )}
